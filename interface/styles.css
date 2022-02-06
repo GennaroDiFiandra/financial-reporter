@@ -1,0 +1,90 @@
+.balance_table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.balance_table td {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.balance_table thead td,
+.balance_table tfoot td {
+  font-weight: bold;
+}
+
+.balance_table tbody tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+.balance_table tbody tr:nth-child(even) {
+  background-color: #e1e1e1;
+}
+.balance_table tbody td:nth-child(2),
+.balance_table tfoot td:nth-child(2) {
+  text-align: right;
+}
+
+.cashflow_table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.cashflow_table td {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.cashflow_table thead tr,
+.cashflow_table tfoot tr {
+  font-weight: bold;
+}
+
+.cashflow_table tbody tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+.cashflow_table tbody tr:nth-child(even) {
+  background-color: #e1e1e1;
+}
+.cashflow_table tbody td:nth-child(2),
+.cashflow_table tbody td:nth-child(3),
+.cashflow_table tfoot td:nth-child(2) {
+  text-align: right;
+}
+
+#transactions_report_print {
+  display: inline-block;
+  margin-top: 25px;
+  text-decoration: none;
+  background-color: #0085ba;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  padding: 10px;
+  transition: .5s box-shadow ease-in-out;
+}
+#transactions_report_print:hover,
+#transactions_report_print:active,
+#transactions_report_print:focus {
+  color: #fff;
+  box-shadow: 0 0 7.5px rgba(0,0,0,0.25);
+}
+
+#transactions_filter {
+  margin-top: 75px;
+}
+
+@media print {
+  #adminmenumain,
+  #wpfooter,
+  #transactions_report_print,
+  #transactions_filter_title {
+    display: none;
+  }
+
+  #wpcontent {
+    margin-left: 0;
+  }
+}
+
+#account-adder {
+  display: none;
+}
